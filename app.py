@@ -29,8 +29,8 @@ def load_lottieurl(url:str):
         return None
     return r.json()
 
-st.header("Predict your demands")
-st.caption("a web based demand prediction application")
+st.header("Demand Prediction Application")
+st.caption("a web based prototype demand prediction application")
 lottie_hello=load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_7c1e8erd.json")
 st.sidebar.title(body="Prediction Application")
 with st.sidebar:
@@ -47,7 +47,7 @@ st.sidebar.caption("Designed by : Aaditya Hamine")
 st.sidebar.caption("LinkedIN Details:")
 st.sidebar.caption(linkedIN)
 menu=["Theta Forecasting","Exponential Smoothing","FbProphet","ARIMA"]
-choice=st.radio(label='Select forecasting technique to predict your demands',options=menu)
+choice=st.radio(label='Select a forecasting technique to predict your demands',options=menu)
 #st.button("Give a try with our example dataset")
 fh=st.slider('How  many days of data you want to predict?',value=10,min_value=10,max_value=180,step=10)
 
@@ -79,7 +79,7 @@ if st.button("Click here to start prediction with our sample dataset"):
         Accuracy=100-error
 
         plt.legend()
-        plt.title('Prediction Accuracy Percentage  : {:.2f}%'.format(Accuracy))
+        plt.title('Prediction Accuracy   : {:.2f}%'.format(Accuracy))
         st.pyplot(fig,figsize=(8,8))
         
     if choice=='Exponential Smoothing':
@@ -96,7 +96,7 @@ if st.button("Click here to start prediction with our sample dataset"):
         Accuracy=100-error
 
         plt.legend()
-        plt.title('Prediction Accuracy Percentage  : {:.2f}%'.format(Accuracy))
+        plt.title('Prediction Accuracy   : {:.2f}%'.format(Accuracy))
         st.pyplot(fig,figsize=(8,8))
     
     if choice=='FbProphet':
@@ -113,7 +113,7 @@ if st.button("Click here to start prediction with our sample dataset"):
         Accuracy=100-error
 
         plt.legend()
-        plt.title('Prediction Accuracy Percentage  : {:.2f}%'.format(Accuracy))
+        plt.title('Prediction Accuracy   : {:.2f}%'.format(Accuracy))
         st.pyplot(fig,figsize=(8,8))  
 
     if choice=='ARIMA':
@@ -130,7 +130,7 @@ if st.button("Click here to start prediction with our sample dataset"):
         Accuracy=100-error
 
         plt.legend()
-        plt.title('Prediction Accuracy Percentage  : {:.2f}%'.format(Accuracy))
+        plt.title('Prediction Accuracy   : {:.2f}%'.format(Accuracy))
         st.pyplot(fig,figsize=(8,8))
   
         
@@ -172,7 +172,7 @@ else:
             Accuracy=100-error
 
             plt.legend()
-            plt.title('Prediction Accuracy Percentage  : {:.2f}%'.format(Accuracy))
+            plt.title('Prediction Accuracy   : {:.2f}%'.format(Accuracy))
             st.pyplot(fig,figsize=(8,8))
             
         if choice=='Exponential Smoothing':
@@ -189,7 +189,7 @@ else:
             Accuracy=100-error
 
             plt.legend()
-            plt.title('Prediction Accuracy Percentage  : {:.2f}%'.format(Accuracy))
+            plt.title('Prediction Accuracy   : {:.2f}%'.format(Accuracy))
             st.pyplot(fig,figsize=(8,8))        
 
         if choice=='FbProphet':
@@ -206,7 +206,7 @@ else:
             Accuracy=100-error
 
             plt.legend()
-            plt.title('Prediction Accuracy Percentage  : {:.2f}%'.format(Accuracy))
+            plt.title('Prediction Accuracy   : {:.2f}%'.format(Accuracy))
             st.pyplot(fig,figsize=(8,8))
       
         if choice=='ARIMA':
@@ -223,7 +223,7 @@ else:
             Accuracy=100-error
 
             plt.legend()
-            plt.title('Prediction Accuracy Percentage  : {:.2f}%'.format(Accuracy))
+            plt.title('Prediction Accuracy   : {:.2f}%'.format(Accuracy))
             st.pyplot(fig,figsize=(8,8))
 
 
