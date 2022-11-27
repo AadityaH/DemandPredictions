@@ -53,7 +53,7 @@ fh=st.slider('How  many days of data you want to predict?',value=10,min_value=10
 
 
 ## Read Data - Our Example Dataset
-df=pd.read_csv(r'C:\Users\Kunal\Demand_Forecasting\data.csv')
+df=pd.read_csv('data.csv')
 series=TimeSeries.from_dataframe(df,'Date','Total')
 ##train test split
 train=int(0.8*len(df['Total']))
