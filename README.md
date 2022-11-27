@@ -1,6 +1,6 @@
 # Demand Prediction Application
 
- **Prototype model to predict the demands**
+ **a Prototype model to predict the demands**
  
  Surprised with Saudi Arabia's win over Argentina in FIFA-2022? and so goes with the demands across supply chain - these  are surprising & unpredictable at times .
 
