@@ -1,4 +1,4 @@
-# DemandPredictions
+# Demand Prediction Application
 
  **Prototype model to predict the demands**
  
