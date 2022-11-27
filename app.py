@@ -21,7 +21,7 @@ from darts.metrics import mape
 import matplotlib.pyplot as plt
 
 
-@st.experimental_singleton()
+##@st.experimental_singleton()
 ## Define Functions to call lottie Animations
 def load_lottieurl(url:str):
     r = requests.get(url)
