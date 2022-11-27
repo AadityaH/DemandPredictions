@@ -11,7 +11,7 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 import codecs
 import streamlit.components.v1 as components
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 import json
 import requests
 from  PIL import Image
@@ -23,18 +23,18 @@ import matplotlib.pyplot as plt
 
 ##@st.experimental_singleton()
 ## Define Functions to call lottie Animations
-def load_lottieurl(url:str):
-    r = requests.get(url)
-    if r.status_code!=200:
-        return None
-    return r.json()
+#def load_lottieurl(url:str):
+ #   r = requests.get(url)
+  #  if r.status_code!=200:
+   #     return None
+    #return r.json()
 
 st.header("Predict your demands")
 st.caption("a web based demand prediction application")
-lottie_hello=load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_7c1e8erd.json")
+#lottie_hello=load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_7c1e8erd.json")
 st.sidebar.title(body="Prediction Application")
-with st.sidebar:
-    st_lottie(lottie_hello,speed=1,reverse=True,loop=True,quality="High",height=200,width=300,key=None)
+#with st.sidebar:
+ #   st_lottie(lottie_hello,speed=1,reverse=True,loop=True,quality="High",height=200,width=300,key=None)
 
 
 #Add a logo (optional) in the sidebar
