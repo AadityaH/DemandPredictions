@@ -8,7 +8,7 @@ Created on Sat Nov 26 16:12:37 2022
 import pandas as pd
 import numpy as np
 import streamlit as st
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 import codecs
 import streamlit.components.v1 as components
 #from streamlit_lottie import st_lottie
